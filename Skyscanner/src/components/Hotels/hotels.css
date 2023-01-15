@@ -1,0 +1,154 @@
+.hotels-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    height: auto;
+}
+
+.hotels-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    align-items: center;
+}
+
+.hotels-seemore {
+    display: flex;
+    flex-direction: row;
+
+    width: 20%;
+    align-items: center;
+    padding-left: 5px;
+    gap: 20px;
+
+}
+
+.hotels-buttons {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.hotels-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.hotels-tab {
+    display: flex;
+    border: 1px solid #0d203c;
+    border-radius: 15px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
+
+.selected {
+    background-color: #0d203c;
+    color: white
+}
+
+.hotels-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+
+.hotels-card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+
+
+}
+
+.hotels-card-header {
+    height: 70%;
+    width: 100%;
+    position: relative;
+}
+
+.hotel-image {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-reviews {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 215px;
+    left: 25px;
+    gap: 10px;
+}
+
+.pontuation {
+    float: left;
+}
+
+.icon-review {
+    float: right;
+}
+
+
+.hotels-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    height: 30%;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+}
+
+.body-up {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.body-location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    width: 100%;
+}
+
+.body-down {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hotel-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 35px;
+    gap: 2px;
+
+
+}

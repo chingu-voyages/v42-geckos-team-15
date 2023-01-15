@@ -1,12 +1,17 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Hotels from "./components/Hotels/Hotels";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <div>Welcome to the page Or Ali and Egnoel</div>
-  )
+    <div>
+      <div className="hotels">
+        <Hotels />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
