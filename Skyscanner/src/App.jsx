@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="pageWrap">
       Welcome to the page Or Ali and Egnoel
-    <Main/>
+      <Main />
     </div>
   )
 }
