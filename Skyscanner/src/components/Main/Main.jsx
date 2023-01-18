@@ -7,7 +7,7 @@ function Main () {
     const [Destination, setDestination] = useState('');
     // DepartDate, Returndate can't be in the past
     // DepartDate is 5 days from today - use built in function new Date()
-    // obj type
+    // obj type, int type
     const [DepartDateYear , setDepartDateYear ] = useState(0);
     const [DepartDateMonth , setDepartDateMonth ] = useState(0);
     const [DepartDateDay , setDepartDateDay ] = useState(0);
