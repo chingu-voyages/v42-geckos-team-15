@@ -12,9 +12,9 @@ function Main () {
     const [DepartDateMonth , setDepartDateMonth ] = useState(0);
     const [DepartDateDay , setDepartDateDay ] = useState(0);
     // Returndate can't be earlier than DepartDate
-    const [ReturndateYear , setReturndateYear ] = useState(0);
-    const [ReturndateMonth , setReturndateMonth ] = useState(0);
-    const [ReturndateDay , setReturndateDay ] = useState(0);
+    const [ReturndateYear , setReturndateYear ] = useState(DepartDateYear);
+    const [ReturndateMonth , setReturndateMonth ] = useState(DepartDateMonth);
+    const [ReturndateDay , setReturndateDay ] = useState(DepartDateDay);
     // int type
     const [numberOfTravelers , setNumberOfTravelers ] = useState(1);
 
