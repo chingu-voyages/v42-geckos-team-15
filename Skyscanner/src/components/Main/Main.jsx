@@ -13,7 +13,7 @@ function Main() {
     // DepartDate is 5 days from today - use built in function new Date()
     // obj type, int type
     const [DepartDateYear, setDepartDateYear] = useState(today.getFullYear());
-    const [DepartDateMonth, setDepartDateMonth] = useState(today.getMonth()+1);
+    const [DepartDateMonth, setDepartDateMonth] = useState(today.getMonth() + 1);
     const [DepartDateDay, setDepartDateDay] = useState(today.getDate());
     // Returndate can't be earlier than DepartDate
     const [ReturndateYear, setReturndateYear] = useState(DepartDateYear);
@@ -22,9 +22,9 @@ function Main() {
     // int type
     const [numberOfTravelers, setNumberOfTravelers] = useState(1);
 
-    return(
+    return (
         <div className="Main_container">
-            <div className="Main_img"/>
+            <div className="Main_img" />
         </div>
     )
 }
