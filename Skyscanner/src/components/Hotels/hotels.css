@@ -1,9 +1,20 @@
 .hotels-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 80%;
-    height: auto;
+
+    justify-content: center;
+    width: 60%;
+    height: 650px;
+
+    margin-left: 20%;
+    margin-top: 80px;
+    margin-bottom: 55px;
+}
+
+.hotels-title {
+    display: flex;
+    justify-content: flex-start;
+
 }
 
 .hotels-middle {
@@ -19,11 +30,22 @@
     display: flex;
     flex-direction: row;
 
-    width: 20%;
+    width: 25%;
     align-items: center;
     padding-left: 5px;
     gap: 20px;
 
+}
+
+.more {
+    color: #296ce4;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.more:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .hotels-buttons {
@@ -32,6 +54,19 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 5px;
+
+}
+
+.buttons-icon {
+    display: flex;
+    background-color: #e0e3e5;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 25%;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .hotels-tabs {
@@ -40,6 +75,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 15px;
+
 }
 
 .hotels-tab {
@@ -65,6 +101,7 @@
     align-items: flex-start;
     gap: 30px;
     width: 100%;
+    height: 460px;
 }
 
 .hotels-card {
@@ -72,8 +109,8 @@
     flex-direction: column;
     width: 30%;
     height: 100%;
-
-
+    box-shadow: 0 2px 20px #e1e5ee;
+    border-radius: 10px;
 }
 
 .hotels-card-header {
@@ -95,9 +132,14 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: 215px;
+    top: 250px;
     left: 25px;
     gap: 10px;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50px;
 }
 
 .pontuation {
@@ -107,7 +149,6 @@
 .icon-review {
     float: right;
 }
-
 
 .hotels-card-body {
     display: flex;
@@ -125,6 +166,7 @@
     align-items: center;
     gap: 5px;
     width: 100%;
+    margin-top: 18px;
 }
 
 .body-location {
@@ -135,13 +177,30 @@
     width: 100%;
 }
 
+.body-middle {
+    height: 40px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.body-middle h2 {
+
+
+
+    width: 90%;
+}
+
 .body-down {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 38px;
+
 }
+
+
 
 .hotel-price {
     display: flex;
@@ -150,5 +209,40 @@
     margin-right: 35px;
     gap: 2px;
 
+}
 
+
+.rating {
+    direction: rtl;
+    text-align: center;
+
+}
+
+.rating>span {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 1px;
+}
+
+.rating>span:hover,
+.rating>span:hover~span {
+    background: transparent;
+}
+
+.rating>span:hover:before,
+.rating>span:hover~span:before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: aquamarine;
+    width: 10px;
+    height: 10px;
+    border: 1px solid aquamarine;
+    border-radius: 20px;
 }
