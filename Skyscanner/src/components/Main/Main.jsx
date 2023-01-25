@@ -24,7 +24,26 @@ function Main() {
 
     return (
         <div className="Main_container">
-            <div className="Main_img" />
+            <div className="Main_img">
+                <div className="Main_content">
+                    <div className="Main_title"/>
+                    <div className="Main_form">
+                    <form 
+                    // onSubmit={getSearch}
+                     className="search-form">
+
+<input
+  className="search-field"
+  placeholder="query"
+  type="text"
+//   value={search}
+//   onChange={updateSearch}
+/>
+</form>
+                    </div>
+                </div>
+            </div>
+            <div/>
         </div>
     )
 }
